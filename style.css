@@ -17,6 +17,11 @@ header {
     color: black;
 }
 
+img {
+    width: 20px;
+    height: 600px;
+}
+
 header > .container {
     display: flex;
     justify-content: space-between;
