@@ -5,6 +5,10 @@
     font-family: "Raleway", sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -17,11 +21,6 @@ header {
     color: black;
 }
 
-img {
-    width: 10px;
-    height: 900px;
-}
-
 header > .container {
     display: flex;
     justify-content: space-between;
@@ -29,10 +28,18 @@ header > .container {
     padding-bottom: 16px;
 }
 
+img {
+    height: 400px;
+    width: 500px;
+    padding: 15px;
+    border-radius: 10%;
+}
+
 nav {
     background-color: whitesmoke;
     color: black;
     padding: 16px 0;
+    display: none;
 }
 
 nav li {
