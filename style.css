@@ -84,3 +84,39 @@ section {
 section h2 {
     margin-bottom: 16px;
 }
+
+.lista-promocoes li {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.lista-promocoes li img {
+    max-width: 150%;
+    justify-content: space-between;
+}
+
+.lista-promocoes h3 {
+    margin: 16px 0;
+
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-promocoes li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: bisque;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.lista-promocoes li strong {
+    margin: 10px 0 ;
+    display: block;
+}
