@@ -22,7 +22,6 @@ header {
 }
 
 header > .container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -58,6 +57,7 @@ nav li a {
 
 .menu-hamburguer {
     width: 32px;
+    cursor: pointer;
 }
 
 .menu-hamburguer span {
@@ -66,4 +66,21 @@ nav li a {
     background-color: black;
     display: block;
     margin-bottom: 4px;
+}
+
+.container-flex { 
+    display: flex;
+}
+
+#sobre-loja img {
+    max-width: 500px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
 }
