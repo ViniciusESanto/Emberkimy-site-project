@@ -27,7 +27,7 @@ header > .container {
     padding-bottom: 16px;
 }
 
-img {
+#carousel-imgs img {
     height: 400px;
     width: 500px;
     padding: 15px;
@@ -91,8 +91,8 @@ section h2 {
 }
 
 .lista-promocoes li img {
-    max-width: 150%;
     justify-content: space-between;
+    width: 250px;
 }
 
 .lista-promocoes h3 {
@@ -116,7 +116,9 @@ section h2 {
     border-radius: 4px;
 }
 
-.lista-promocoes li strong {
+.price del {
+    color: #ccc;
+    font-size: 14px;
     margin: 10px 0 ;
     display: block;
 }
