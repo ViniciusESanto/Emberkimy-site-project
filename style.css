@@ -150,9 +150,22 @@ form {
 }
 
 footer {
-    text-align: center;
-    padding: 0 20px;
     background-color: whitesmoke;
     font-size: 12px;
     font-weight: bold;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 48px;
+
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items:center
 }
