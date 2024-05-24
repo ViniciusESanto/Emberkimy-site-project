@@ -64,7 +64,7 @@ nav li a {
     cursor: pointer;
 }
 
-.menu-hamburguer span {
+.menu-hamburguer div {
     height: 2px;
     width: 100%;
     background-color: black;
@@ -194,11 +194,16 @@ footer .container {
     }
 
     .menu-hamburguer{
-        margin-top: 15px;
+        position: absolute;
+        display: block;
+        right: 30px;
+        top: 30px;
+
+        
     }
 
     nav li {
-        display: flex;
+        display: block;
         padding: 3px;
     }
 
