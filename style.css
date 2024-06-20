@@ -87,30 +87,43 @@ nav li a {
 }
 
 section {
-    padding: 48px 0;
+    padding: 12px ;
 }
 
 section h2 {
-    margin-bottom: 16px;
+    margin-left: 26px;
 }
 
-.lista-promocoes li {
-    list-style: none;
-    margin-bottom: 24px;
+.produtos {
+    display: grid;
+	gap: 15px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	padding-block: 4rem;
 }
 
-.lista-promocoes li img {
-    justify-content: space-between;
-    width: 250px;
+.produtos img {
+    width: 150px;
 }
 
-.lista-promocoes h3 {
+.produtos h3 {
     margin: 16px 0;
 
 }
 
-.item-central {
-    margin: 0 5%;
+.box {
+    display: grid;
+	grid-template-rows: auto auto;
+    grid-template-areas:
+		"image"
+		"info";
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.box img {
+    max-width: 320px;
+    justify-self: center;
 }
 
 button {
@@ -179,7 +192,7 @@ footer .container {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 641px) {
     .conteudo {
         display: block;
     }
@@ -197,9 +210,7 @@ footer .container {
         position: absolute;
         display: block;
         right: 30px;
-        top: 30px;
-
-        
+        top: 30px;       
     }
 
     nav li {
@@ -236,4 +247,52 @@ footer .container {
         justify-content: space-between;
     }
     
+}
+
+@media screen and (min-width: 700px) and (max-width:1024px) {
+    .conteudo {
+        display: flex;
+    }
+
+    .container {
+        max-width: 90%;
+
+    }
+
+    .container-flex { 
+        display: block;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        border: none;
+        background-color: bisque;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+    .menu-hamburguer{
+        position: absolute;
+        display: block;
+        right: 30px;
+        top: 30px;       
+    }
+
+    .produtos {
+		grid-template-columns: repeat(2, minmax(28rem, 1fr));
+		grid-template-rows: auto auto;
+    }
+
+    
+    footer > .container-flex {
+        background-color: whitesmoke;
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        padding: 20px;
+    }
 }
