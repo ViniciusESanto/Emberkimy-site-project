@@ -205,7 +205,7 @@ footer .container {
     .container-flex { 
         display: block;
     }
-
+    
     .menu-hamburguer{
         position: absolute;
         display: block;
@@ -233,6 +233,13 @@ footer .container {
         margin-right: 50px;
     }
 
+    .main-products {
+        justify-content: center;
+        width: 100px;
+        height: auto;
+        display: inline;
+    }
+
     footer > .container-flex {
         background-color: whitesmoke;
         font-size: 12px;
@@ -255,8 +262,8 @@ footer .container {
     }
 
     .container {
-        max-width: 90%;
-
+        max-width: 80%;
+        margin-left: 95px;
     }
 
     .container-flex { 
@@ -283,8 +290,12 @@ footer .container {
     }
 
     .produtos {
-		grid-template-columns: repeat(2, minmax(28rem, 1fr));
+        display: grid;
 		grid-template-rows: auto auto;
+    }
+
+    .form {
+        margin: auto;
     }
 
     
